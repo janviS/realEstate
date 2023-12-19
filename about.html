@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    />
+  </head>
+  <body>
+    <div class="row header">
+      <div class="col-lg-4 "></div>
+      <div class="col-lg-4 "></div>
+      <div class="col-lg-4 " ></div>
+    </div>
+    <div class="header-main">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="col-xl-2 col-6">
+          <div class="logo">
+            <a class="header-logo" href="index.html">
+              <img src="./Images/Banner/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-8 d-none d-xl-block" style="margin-top: 1rem">
+          <div
+            class="mainMenu-area d-flex align-items-center justify-content-center"
+          >
+            <div class="mainMenu">
+              <nav class="mainMenu-content">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href=""
+                      >HOME
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="down"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="index.html">HOME 1</a>
+
+                    <a href="">HOME 2</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="about.html">ABOUT US </a>
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href=""
+                      >SERVICES
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="down"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="service.html">SERVICE</a>
+                    <a href="propertyList.html">PROPERTY LIST</a>
+                    <a href="serviceDetails.html">SERVICE DETAILS</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href=""
+                      >BLOG
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="down"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="blog.html">BLOG</a>
+
+                    <a href="blog-details.html">BLOG DETAIL</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="">CONTACT </a>
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="right-nav d-flex align-items-center justify-content-end">
+            <div class="search me-5 d-none d-xl-block z-index-1">
+              <button
+                class="btn btn-transparent mt-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="search-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-top"
+                tabindex="-1"
+                id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                  <h3 class="">Hi, How can i help you?</h3>
+                  <input
+                    class="ps-4"
+                    type="text"
+                    name="search"
+                    placeholder="Search..."
+                    id=""
+                    style="width: 50rem; height: 3rem"
+                  /><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="searchInOff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="menus">
+              <button
+                class="btn d-flex justofy-content-center align-items-center menu-btn"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background-color: #ff6647;
+                  border-radius: 50%;
+                "
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="menus"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 9a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9zm0 6.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="mt-1 offcanvas-title" id="offcanvasRightLabel">
+                    <img class="mt-5" src="./Images/Banner/logo.png" alt=""/>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="body-normal">
+                    <p>
+                      Residential Real Estate: This segment focuses on
+                      properties intended for residential use. Gallery
+                    </p>
+                    <div class="offcanvas__popup-gallery">
+                      <h4 class="offcanvas__title">Gallery</h4>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-2.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-3.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-4.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-5.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a class="popup-image" href="#">
+                        <img
+                          src="./Images/Banner/off_canvas/img-6.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="offcanvas__contact">
+                      <h4 class="offcanvas__title">Contacts</h4>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="location"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a
+                            href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1"
+                            >86 Road Broklyn Street, 600
+                          </a>
+                        </div>
+                      </div>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="mail"
+                            >
+                              <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                              />
+                              <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a href="mailto:needhelp@company.com ">
+                            Needhelp@company.com
+                          </a>
+                        </div>
+                      </div>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="phone"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a href="tel:92666880"> +92 666 888 0000</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offcanvas__social mt-4">
+                      <a href="#"
+                        ><i
+                          ><img src="./Images/Banner/instagram.png" alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          ><img
+                            src="./Images/Banner/facebook-app-symbol.png"
+                            alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i><img src="./Images/Banner/twitter.png" alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i><img src="./Images/Banner/linkedin.png" alt="" /></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="body-zoomed">
+                    <div class="mainMenu-mobile fix d-xl-none mb-40">
+                      <nav class="mainMenu-content">
+                        <ul>
+                          <li class="has-dropdown dropdown-opened">
+                            <a href="index.html" class="expanded"
+                              >Home<button
+                                class="dropdown-toggle-btn dropdown-opened"
+                              >
+                                <i
+                                  class="fa-regular fa-angle-right"
+                                ></i></button
+                            ></a>
+                            <ul class="submenu" style="display: block">
+                              <li><a href="index.html">Home 1</a></li>
+                              <li><a href="index-2.html">Home 2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li class="has-dropdown dropdown-opened">
+                            <a href="service.html" class="expanded"
+                              >Services<button
+                                class="dropdown-toggle-btn dropdown-opened"
+                              >
+                                <i
+                                  class="fa-regular fa-angle-right"
+                                ></i></button
+                            ></a>
+                            <ul class="submenu" style="display: block">
+                              <li><a href="service.html">Service</a></li>
+                              <li>
+                                <a href="property-list.html">Property list</a>
+                              </li>
+                              <li>
+                                <a href="serviceDetails.html"
+                                  >Service Details</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-dropdown dropdown-opened">
+                            <a href="blog.html" class="expanded"
+                              >Blog<button
+                                class="dropdown-toggle-btn dropdown-opened"
+                              >
+                                <i
+                                  class="fa-regular fa-angle-right"
+                                ></i></button
+                            ></a>
+                            <ul class="submenu" style="display: block">
+                              <li><a href="blog.html">Blog</a></li>
+                              <li>
+                                <a href="blog-details.html">Blog Details</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="offcanvas__contact">
+                      <h4 class="offcanvas__title">Contacts</h4>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="location"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a
+                            href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1"
+                            >86 Road Broklyn Street, 600
+                          </a>
+                        </div>
+                      </div>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="mail"
+                            >
+                              <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                              />
+                              <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a href="mailto:needhelp@company.com ">
+                            Needhelp@company.com
+                          </a>
+                        </div>
+                      </div>
+                      <div class="offcanvas__contact-content d-flex">
+                        <div class="offcanvas__contact-content-icon">
+                          <i
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="phone"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                        <div class="offcanvas__contact-content-content">
+                          <a href="tel:92666880"> +92 666 888 0000</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offcanvas__social mt-4">
+                      <a href="#"
+                        ><i
+                          ><img src="./Images/Banner/instagram.png" alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          ><img
+                            src="./Images/Banner/facebook-app-symbol.png"
+                            alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i><img src="./Images/Banner/twitter.png" alt="" /></i
+                      ></a>
+                      <a href="#"
+                        ><i><img src="./Images/Banner/linkedin.png" alt="" /></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+        <section
+          class="breadcrumb__area pb-145 breadcrumb-transform p-relative z-index-1 fix"
+          data-bg-color="#F8F8F8"
+          style="
+            background-color: rgb(248, 248, 248);
+            padding-top: 15rem;
+            padding-bottom: 9rem;
+          "
+        >
+          <div
+            class="breadcrumb__bg"
+            data-background="./Images/ServicePage/heroImg.png"
+            style="background-image: url('./Images/ServicePage/heroImg.png')"
+          ></div>
+          <div class="container" style="margin-top: -5rem">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <div class="breadcrumb__content">
+                  <h3 class="breadcrumb__title">About</h3>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="breadcrumb__content">
+                  <div class="breadcrumb__list text-center text-sm-end">
+                    <span><a href="index.html">Home</a></span>
+                    <span class="dvdr"
+                      ><i
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="arrow"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          /></svg></i
+                    ></span>
+                    <span>About</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-Area pb-120" style="padding-top: 3rem;">
+            <div class="shape">
+              <img src="./Images/section2/shape-1.jpg" alt="">
+            </div>
+            <div class="container" style="margin-top: 8rem;"><div class="row"><div class="col-lg-6">
+              <div class="aBout--thumb-wrapper position-relative d-flex justify-content-lg-center">
+                <img src="./Images/section2/img-1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="aBout--wrapper">
+              <div class="aBout--title-wrapper">
+                <span class="sec--title-pre">ABOUT COMPANY</span>
+                <h3 class="sec--title">We help you build on <br>your past</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor maxime eos, placeat dolore quae a ad culpa error eum,  ad culpa error eum</p>
+              </div>
+            </div>
+            <div class="aBout--wrapper-list">
+              <div class="left">
+                <div class="aBout--left ">
+                <ul>
+                  <li>
+                  <span><i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                  </svg>
+                  </i></span>
+                  Opening doors to your future</li>
+                <li><span><i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="check">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                </svg>
+                </i></span>Experience the difference</li></ul>
+                </div>
+              </div>
+              <div class="right"><div class="aBout--right">
+              <ul>
+              
+              <li><span><i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="check">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+              </svg>
+              </i></span>Your Startup industry mattis</li>
+              <li><span><i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="check">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+              </svg>
+              </i></span>Startup industry stan mattis</li></ul></div></div>
+            </div>
+            <div class="aBout--point">
+              <div class="aBout--point-inner ">
+                <div class="aBout--point-icon">
+                  <span>
+                  <img src="./Images/section2/icon-1.svg" alt="">
+                </span>
+                </div>
+                <div class="aBout--point-content">
+                  <h4 class="aBout--point-title">Home Scope</h4>
+                  <p>Construction Services</p>
+                </div>
+              </div>
+              <div class="aBout--point-inner ">
+                <div class="aBout--point-icon">
+                  <span>
+                  <img src="./Images/section2/icon-2.svg" alt="">
+                </span>
+                </div>
+                <div class="aBout--point-content">
+                  <h4 class="aBout--point-title">
+                    Place Perfect
+                  </h4>
+                  <p>Architecture Service</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </section>
+          <section class="faQ-area pb-120">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="faQ-title-wrapper mb-60">
+                        <span class="sec--title-pre">Some FAQ’s</span>
+                        <h3 class="sec--title">Questions? Look Here</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xl-6">
+                     <div class="faQ-tab-content a-ccor">
+                        <div class="accordion" id="general_accordion">
+                           <div class="accordion-item faQ-active" style="color: white;">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1 - What is the process for buying a home?
+                                 </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#general_accordion">
+                                 <div class="accordion-body">
+                                    <p>It is a long established fact that a reader will be dist acted bioiiy desig the rea
+                                       dablea content of a page when looking</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item" style="color: white;">
+                              <h2 class="accordion-header" id="headingTwo">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2 - How can I get pre-approved for a mortgage?
+                                 </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#general_accordion">
+                                 <div class="accordion-body">
+                                    <p>It is a long established fact that a reader will be dist acted bioiiy desig the rea
+                                       dablea content of a page when looking</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item" style="color: white;">
+                              <h2 class="accordion-header" id="headingThree">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3- What is the difference between a buyer's agent?
+                                 </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#general_accordion">
+                                 <div class="accordion-body">
+                                    <p>It is a long established fact that a reader will be dist acted bioiiy desig the rea
+                                       dablea content of a page when looking</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item"style="color: white;">
+                              <h2 class="accordion-header" id="headingFour">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4- Contrary to popular Lorem Ipsum this item is not simply ?
+                                 </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#general_accordion">
+                                 <div class="accordion-body">
+                                    <p>It is a long established fact that a reader will be dist acted bioiiy desig the rea
+                                       dablea content of a page when looking</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+    
+                  <div class="col-xl-6">
+                     <div class="faQ-thumb text-center p-relative ">
+                        <img class="main-img" src="./Images/section7/img-1 (1).jpg" alt="">
+                        <img class="shape-1" src="./Images/section7/shape-1.png" alt="">
+                        <img class="shape-2" src="./Images/section7/shape-2.png" alt="">
+                        <div class="faq-video-btn">
+                           <a class="plAy--btn popup-video" href="https://www.youtube.com/watch?v=go7QYaQR494"><i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="play">
+                              <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path>
+                            </svg>
+                            
+                            
+                           </i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="teaM--counter-box" data-background="./Images/section6/bg.jpg" style="background-image: url(./Images/section6/bg.jpg);">
+          <div class="teaM--counter-overlay">
+          </div>
+          <section class="teaM--area pb-90">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                    <div class="teaM--title-wrapper mb-60">
+                      <span class="sec--title-pre">Connected Partners</span>
+                      <h3 class="sec--title">Making your real estate <br> dreams a reality</h3>
+                    </div>
+                </div>         
+                <div class="col-lg-4">
+                  <div class="teaM--nav text-end p-relative">
+                    <button type="button">
+                        <i>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow-long-left">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"></path>
+                          </svg>
+                        </i>
+                      </button>
+                      <button type="button">
+                        <i>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow-long-right">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                          </svg>
+                        </i>
+                      </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="teaM--wrapper " style="gap: 10px;">
+                  <div class="col-lg-4 col-md-4 col">
+                  <div class="teaM--item">
+                    <div class="teaM--thumb thumb-1">
+                      <a href="#">
+                        <img src="./Images/section6/img-1.jpg" alt="">
+                      </a>      
+                      <div class="icons-socio">
+                        <a href="https://www.instagram.com/">
+                          <img class="img-1" src="./Images/Banner/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                          <img class="img-2" src="./Images/Banner/facebook-app-symbol.png" alt="">
+                        </a>
+                        <a href="https://twitter.com/">
+                          <img class="img-3" src="./Images/Banner/twitter.png" alt="">
+                        </a>
+                    </div>            
+                    </div>
+                    <div class="teaM--content">
+                      <span>
+                        <i>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fa-share-nodes">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"></path>
+                          </svg>
+                        </i>
+                      </span>
+                      <h4 class="teaM--title">
+                        <a href="">Arlene McCoy</a>
+                      </h4>
+                      <p>IT Department</p>
+                    </div>
+                  </div>
+                  </div>
+                    <div class="col-lg-4 col-md-4 col">
+                    <div class="teaM--item">
+                      <div class="teaM--thumb">
+                        <a href=""><img src="./Images/section6/img-2.jpg" alt="">
+                        </a>         
+                        <div class="icons-socio">
+                          <a href="https://www.instagram.com/">
+                            <img class="img-1" src="./Images/Banner/instagram.png" alt="">
+                          </a>
+                          <a href="https://www.facebook.com/">
+                            <img class="img-2" src="./Images/Banner/facebook-app-symbol.png" alt="">
+                          </a>
+                          <a href="https://twitter.com/">
+                            <img class="img-3" src="./Images/Banner/twitter.png" alt="">
+                          </a>
+                      </div>    
+                      </div>
+                      <div class="teaM--content">
+                        <span>
+                          <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fa-share-nodes">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"></path>
+                            </svg>
+                          </i>
+                        </span>
+                        <h4 class="teaM--title">
+                          <a href="">Eleanor Peno</a>
+                        </h4>
+                        <p>Graphics</p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-lg-4 col-md-4 col third-team-img">
+                    <div class="teaM--item">
+                      <div class="teaM--thumb">
+                        <a href=""><img src="./Images/section6/img-3.jpg" alt="">
+                        </a>
+                        <div class="icons-socio">
+                          <a href="https://www.instagram.com/">
+                            <img class="img-1" src="./Images/Banner/instagram.png" alt="">
+                          </a>
+                          <a href="https://www.facebook.com/">
+                            <img class="img-2" src="./Images/Banner/facebook-app-symbol.png" alt="">
+                          </a>
+                          <a href="https://twitter.com/">
+                            <img class="img-3" src="./Images/Banner/twitter.png" alt="">
+                          </a>
+                      </div>
+                      </div>
+                      <div class="teaM--content">
+                        <span>
+                          <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fa-share-nodes">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"></path>
+                            </svg>
+                          </i>
+                        </span>
+                        <h4 class="teaM--title">
+                          <a href="">Mutlen Sek</a>
+                        </h4>
+                        <p>Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            
+          </section>
+          <section class="counTer-area " style="padding-bottom:120px">
+          <div class="container">
+             <div class="counTer-wrapper" style="margin-top: 95px;"> 
+                <div class="row">
+                   <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="counTer-item d-flex mb-30">
+                         <div class="counTer-item-icon">
+                            <span>
+                               <img src="./Images/section6/icon-1.svg" alt="">
+                            </span>
+                         </div>
+                         <div class="counTer-item-content">
+                            <h4 class="counTer-title"><span class="purecounter" data-purecounter-duration="0" data-purecounter-end="200">200</span>+</h4>
+                            <p>Team member</p>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="counTer-item d-flex justify-content-center mb-30">
+                         <div class="counTer-item-icon">
+                            <span>
+                               <img src="./Images/section6/icon-2.svg" alt="">
+                            </span>
+                         </div>
+                         <div class="counTer-item-content">
+                            <h4 class="counTer-title"><span class="purecounter" data-purecounter-duration="0" data-purecounter-end="450">450</span>+</h4>
+                            <p>Total Project</p>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="counTer-item d-flex justify-content-center mb-30">
+                         <div class="counTer-item-icon">
+                            <span>
+                               <img src="./Images/section6/icon-3.svg" alt="">
+                            </span>
+                         </div>
+                         <div class="counTer-item-content">
+                            <h4 class="counTer-title"><span class="purecounter" data-purecounter-duration="0" data-purecounter-end="400">400</span>+</h4>
+                            <p>Setishfacfied</p>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="counTer-item d-flex justify-content-center mb-30">
+                         <div class="counTer-item-icon">
+                            <span>
+                               <img src="./Images/section6/icon-4.svg" alt="">
+                            </span>
+                         </div>
+                         <div class="counTer-item-content">
+                            <h4 class="counTer-title"><span class="purecounter" data-purecounter-duration="0" data-purecounter-end="100">100</span>+</h4>
+                            <p>Total Award</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          </section>
+        </div>
+        <section class="conTact--area p-relative " style="padding-bottom: 10rem;">
+          <div class="conTact--shape">
+            <img src="./Images/section9/bg.png" alt="">
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="conTact--thumb-wrapper p-relative text-center">
+                  <img src="./Images/section9/img-1.jpg" alt="">
+                  <img class="shape-1" src="./Images/section9/icon-1.png" alt="">
+                  <img class="shape-2" src="./Images/section9/icon-2.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="conTact--title-wrapper mb-55">
+                  <span class="sec--title-pre">TALK TO US</span>
+                  <h3 class="sec--title" style="font-size: 3.5rem; color: #262626">Creating spaces where life happens</h3>
+                </div>
+                <div class="conTact--form">
+                  <form action="" id="contact-form" method="post">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="contact-input">
+                          <input type="text" name="name" placeholder="First Name">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="contact-input">
+                          <input type="text" name="l_name" placeholder="Last Name">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="contact-input">
+                          <input type="text" name="phone" placeholder="Phone Number">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="contact-input">
+                          <input type="email" name="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="contact-input">
+                          <textarea name="message" placeholder="Comment"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <p>We don't sell your email and spam</p>
+                        <div class="contact__btn">
+                          <button class="btn-below" type="submit" href="#">Submit Here</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> <footer
+        class="fooTer-area text-white"
+        data-bg-color="#1F313F"
+        style="
+          background-color: rgb(31, 49, 63);
+          padding-top: 80px;
+          position: relative;
+          margin-top: 0;
+        "
+      >
+        <div class="fooTer-bg">
+          <img src="./Images/section12Footer/footer-bg.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="fooTer-main-area fooTer-border">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div
+                  class="fooTer-widget fooTer-col-1"
+                  style="margin-bottom: 50px"
+                >
+                  <div class="fooTer-logo" style="margin-bottom: 40px">
+                    <a href="index.html">
+                      <img src="./Images/section12Footer/logo-white.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="fooTer-widget-content">
+                    <p>
+                      There are many variations passages of Lorem Ipsum availbut
+                      the majority have suffered alteration
+                    </p>
+                    <div class="fooTer-widget-call d-flex align-items-center">
+                      <div class="fooTer-widget-call-thumb">
+                        <img src="./Images/section12Footer/user-4.png" alt="" />
+                      </div>
+                      <div class="fooTer-widget-call-content">
+                        <p>Need Help?</p>
+                        <a href="tel:555-0108">(239) 555-0108</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div
+                  class="fooTer-widget fooTer-col-2"
+                  style="margin-bottom: 50px"
+                >
+                  <h3 class="fooTer-widget-title">Company</h3>
+                  <div class="fooTer-widget-content">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About </a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Work Process</a></li>
+                      <li><a href="#">Team</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div
+                  class="fooTer-widget fooTer-col-3"
+                  style="margin-bottom: 50px"
+                >
+                  <h3 class="fooTer-widget-title">Information</h3>
+                  <div class="fooTer-widget-content">
+                    <ul>
+                      <li><a href="#">Partners</a></li>
+                      <li><a href="#">Price</a></li>
+                      <li><a href="#">Location</a></li>
+                      <li><a href="#">Apartment</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div
+                  class="fooTer-widget fooTer-col-4"
+                  style="margin-bottom: 50px"
+                >
+                  <h3 class="fooTer-widget-title">Essentials</h3>
+                  <div class="fooTer-widget-content">
+                    <ul>
+                      <li><a href="#">Nest Key</a></li>
+                      <li><a href="#">Propi</a></li>
+                      <li><a href="#">Shelter HQ</a></li>
+                      <li><a href="#">Realtoz</a></li>
+                      <li><a href="#">Dwelz</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fooTer-copyright-area p-relative">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="fooTer-copyright-inner">
+                  <p>© RealNest 2023 | All Rights Reserved</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="fooTer-copyright-inner text-lg-end">
+                  <a href="#">Terms &amp; Condition</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
